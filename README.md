@@ -35,16 +35,5 @@ using the same stack and structure as the PigPass project: Windows Forms + SQLit
 Forms never access the database directly; they call controllers. Every stock change goes through
 `StockController`, which updates the quantity and writes the transaction in one database transaction.
 
-## How to run
-1. Install Visual Studio 2022 with the ".NET desktop development" workload (.NET 8 SDK).
-2. Open `InventoryStock.sln` and press F5 (NuGet packages restore automatically).
-3. Log in with a demo account (database `inventory.db` is created next to the .exe on first run):
 
-| Username | Password | Role |
-|---|---|---|
-| admin | admin123 | Administrator |
-| manager | manager123 | Stock Manager |
-| sales | sales123 | Sales Staff |
 
-## Technologies
-C#, .NET 8, Windows Forms, Entity Framework Core 8, SQLite
